@@ -3,8 +3,9 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
+    /*-webkit-font-smoothing: antialiased;*/
     -moz-osx-font-smoothing: grayscale;
+    min-width: 375px;/*ajout*/
 }
 
 a,
@@ -37,11 +38,13 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    padding-top: 1px;/*ajout*/
 }
 
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    margin-top: 9.9px;/*ajout*/
 }
 
 .bloc-lg {
@@ -316,11 +319,19 @@ a:hover {
 }
 
 .navbar .nav {
-    padding-top: 2px;
-    margin-right: -16px;
+    padding-bottom: 2rem; /*modifier*/
+    margin-right: 100px;/*modifier*/
     float: right;
     z-index: 1;
+    list-style-type: none;/*ajout*/
 }
+
+/*Début ajout*/
+.navbar .nav a{ 
+    text-decoration: none; 
+    padding-right: 1rem; 
+}
+/*Fin ajout*/
 
 .nav > li {
     float: left;
@@ -654,12 +665,13 @@ a {
     color: #575757!important;
 }
 
-.container {
+/*.container {
     max-width: 1000px;
-}
+}*/
 
 .hero-bloc-text {
     font-size: 38px;
+    text-align: center;/*ajout*/
 }
 
 .hero-bloc-text-sub {
@@ -683,6 +695,8 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    text-align: center;/*ajout*/
+    font-size: 18px;/*ajout*/
 }
 
 .h1 {
@@ -737,6 +751,8 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    filter: contrast(200%);/*ajout*/
+    text-align: center;/*ajout*/
 }
 
 .portfolio-thumb {
@@ -773,10 +789,12 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+    filter: contrast(170%);/*ajout*/
 }
 
 .tc-white {
     color: #F3976C!important;
+    filter: contrast(130%);/*ajout*/
 }
 
 .btn-atomic-tangerine {
@@ -825,6 +843,15 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg"); /*modifier*/
 }
+
+/*Début ajout*/
+.form-group{
+    margin-bottom: 10px;
+}
+.col-sm-6{
+    text-align: center;
+}
+/*Fin ajout*/
 
 @media (max-width: 1024px) {
     .bloc {

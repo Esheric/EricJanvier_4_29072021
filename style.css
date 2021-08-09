@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    /*-webkit-font-smoothing: antialiased;*/
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-width: 375px;/*ajout*/
 }
@@ -325,13 +325,6 @@ a:hover {
     z-index: 1;
     list-style-type: none;/*ajout*/
 }
-
-/*Début ajout*/
-.navbar .nav a{ 
-    text-decoration: none; 
-    padding-right: 1rem; 
-}
-/*Fin ajout*/
 
 .nav > li {
     float: left;
@@ -665,9 +658,9 @@ a {
     color: #575757!important;
 }
 
-/*.container {
+.container {
     max-width: 1000px;
-}*/
+}
 
 .hero-bloc-text {
     font-size: 38px;
@@ -689,7 +682,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;/*modifier*/
 }
 
 .tight-width-whitespace {
@@ -752,7 +745,7 @@ h4 {
 .white {
     color: #FFFFFF!important;
     filter: contrast(200%);/*ajout*/
-    text-align: center;/*ajout*/
+    font-size: 16px; /*ajout*/
 }
 
 .portfolio-thumb {
@@ -794,7 +787,10 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
-    filter: contrast(130%);/*ajout*/
+}
+
+.tc-contact {
+    color : white!important;
 }
 
 .btn-atomic-tangerine {
@@ -809,6 +805,7 @@ h4 {
 
 .ltc-white {
     color: #FFFFFF!important;
+    filter: contrast(130%);/*ajout*/
 }
 
 .ltc-white:hover {
@@ -841,7 +838,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg"); /*modifier*/
+    background-image: url("img/image-de-presentation.jpg");/*modifier*/
 }
 
 /*Début ajout*/
@@ -876,17 +873,17 @@ h4 {
     }
 }
 
-/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-/*@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
-}*/
+}
 
 @media (max-width: 991px) {
     .container {
@@ -900,10 +897,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    /*.bloc {
+    .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }*/
+    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -912,8 +909,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        /*padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);*/
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
